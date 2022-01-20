@@ -23,12 +23,14 @@
 
     </script>
 
+
+
     <a-scene>
 
         <!-- Set the Camera position -->
-        <a-entity position= "-2 0 2" camera wasd-controls look-controls animation= "property:position; to: 0 3 0 dur: 1000" > 
-            <a-camera> 
-                <a-cursor fuse= "true" fuse-timeout= "2000"> </a-cursor>
+        <a-entity position="-2 0 2" camera wasd-controls="property:position; to: 0 3 0 dur: 1000">
+            <a-camera>
+                <a-cursor fuse="true" fuse-timeout="2000"> </a-cursor>
             </a-camera>
         </a-entity>
         <!-- Floor -->
@@ -36,10 +38,10 @@
 
 
         <!-- Ambient lighting -->
-        <a-entity id= "light" light= "type: ambient; color: 888;"> </a-entity>
+        <a-entity id="light" light="type: ambient; color: 888;"> </a-entity>
 
         <!-- Rain -->
-        <a-entity id= "rain"; color= "#24caff"> </a-entity>
+        <a-entity id="rain" ; color="#24caff"> </a-entity>
 
         <!-- sKY -->
 
@@ -54,7 +56,8 @@
         <a-box position=" -2 4.75 -5" depth="0.1" height="1" width="1" color="#000000"> </a-box>
 
         <!-- Castle - Front left Tower 1 Roof -->
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-2 6.5 -6"> </a-cone>
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-2 6.5 -6">
+        </a-cone>
 
         <!-- Flag -->
         <a-cylinder position="-2 7 -6" radius="0.1" height="3" src="img/drawbridge1.jpg"> </a-cylinder>
@@ -94,7 +97,8 @@
         </a-plane>
 
         <!-- Castle - Front right Tower 2 Window -->
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="4 6.5 -6"> </a-cone>
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="4 6.5 -6">
+        </a-cone>
 
         <!-- Castle - Front right Tower 2 Roof -->
         <a-box position=" 4 4.75 -5" depth="0.1" height="1" width="1" color="#000000"> </a-box>
@@ -108,20 +112,20 @@
         </a-plane>
 
         <!-- Castle - Back Right Tower 4 Roof -->
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="4 6.5 -16"> </a-cone>
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="4 6.5 -16">
+        </a-cone>
         <a-box position=" 4 4.75 -17" depth="0.1" height="1" width="1" color="#000000"> </a-box>
         <!-- Castle - Back left Tower 3-->
         <a-cylinder position="-2 3 -16" width="2" height="6" depth="2" src="/img/bricks4p.jpeg"> </a-cylinder>
         <a-cylinder position="-2 7 -16" radius="0.1" height="3" src="/img/drawbridge1.jpg"> </a-cylinder>
-        <a-plane position="-1.25 8 -16" width="1.5" height="1" rotation="0 0 0"
-            src="/img/IMG_1803.JPG">
+        <a-plane position="-1.25 8 -16" width="1.5" height="1" rotation="0 0 0" src="/img/IMG_1803.JPG">
         </a-plane>
-        <a-plane position="-1.25 8 -16" width="1.5" height="1" rotation="0 180 0"
-            src="/img/IMG_1803.JPG">
+        <a-plane position="-1.25 8 -16" width="1.5" height="1" rotation="0 180 0" src="/img/IMG_1803.JPG">
         </a-plane>
 
         <!-- Castle - Back Left Tower 3 Roof -->
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-2 6.5 -16"> </a-cone>
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-2 6.5 -16">
+        </a-cone>
         <a-box position=" -2 4.75 -17" depth="0.1" height="1" width="1" color="#000000"> </a-box>
 
         <!-- Castle - rear wall B 4 -->
@@ -130,50 +134,49 @@
         <!-- Castle -middle left Tower 5 -->
         <a-cylinder position="-4 2.5 -11" width="2" height="5" depth="2" src="/img/bricks4p.jpeg"> </a-cylinder>
         <a-box position=" -4 3.75 -10" depth="0.1" height="1" width="1" color="#000000"> </a-box>
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-4 5.5 -11"> </a-cone>
-        
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="-4 5.5 -11">
+        </a-cone>
+
 
         <!-- Castle -middle right Tower 6 -->
-        <a-cylinder position="6.5 2.5 -11" width="2" height="5" depth="2" src="/img/bricks4p.jpeg"> </a-cylinder> 
+        <a-cylinder position="6.5 2.5 -11" width="2" height="5" depth="2" src="/img/bricks4p.jpeg"> </a-cylinder>
         <a-box position=" 6.5 3.75 -10" depth="0.1" height="1" width="1" color="#000000"> </a-box>
-        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="6.5 5.5 -11"> </a-cone>
-        
+        <a-cone src="/img/drawbridge1.jpg" radius-bottom="1.2" radius-top="0.4" height="1" position="6.5 5.5 -11">
+        </a-cone>
+
         <!-- Castle -middle left Wall C  -->
-        <a-box position="-2.5 1 -8" rotation="0 -70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg"> </a-box>
+        <a-box position="-2.5 1 -8" rotation="0 -70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg">
+        </a-box>
 
         <!-- Castle -middle left Wall E -->
-        <a-box position="-2.5 1 -13.5" rotation="0 70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg"> </a-box>
+        <a-box position="-2.5 1 -13.5" rotation="0 70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg">
+        </a-box>
 
         <!-- Castle -middle right Wall D -->
         <a-box position="5.5 1 -8" rotation="0 70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg"> </a-box>
         <a-sky src="/img/sky.jpg"> </a-sky>
         <!-- Castle -middle right Wall F -->
-        <a-box position="5.5 1 -13.5" rotation="0 -70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg"> </a-box>
+        <a-box position="5.5 1 -13.5" rotation="0 -70 0" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg">
+        </a-box>
         <a-box position="1 1 -16" width="5" height="4" depth="0.5" src="/img/bricks2p.jpg"> </a-box>
         <!-- Castle Bailey -->
         <a-circle radius="4" height="0.2" depth="2" position="1.25 0.1 -10.5" rotation="-90 0 0"
             src="/img/castle-floor.jpg"> </a-circle>
 
         <!-- Castle - draw bridge  -->
-        <a-box position= "1 1 -6.2" width= "2" height= "4" depth= "0.2" src="/img/drawbridge1.jpg" 
-        
-        animation__1="
+        <a-box position="1 1 -6.2" width="2" height="4" depth="0.2" src="/img/drawbridge1.jpg" animation__1="
         property: rotation;
         from: 0 0 0;
         to: 90 0 0;
         dur: 4500;
         dir: alternate;
         startEvents: click;
-        " 
-        
-        animation__2= 
-        "property: position;
+        " animation__2="property: position;
         from: 1 1 -6;
         to: 1 0.125 -4;
         dur: 4500;
         dir: alternate ;
-        startEvents: click;"
-        > 
+        startEvents: click;">
         </a-box>
 
         <!-- Moat -->
@@ -202,24 +205,64 @@
 
 
         <!-- Shark -->
-        <a-asset-item id= "shark" src= "https://cdn.glitch.global/976963d0-31f8-4217-b348-50e0f47514a1/Shark.glb?v=1642550204173" 
-        
-        animation__1 = "
-        property: position;
-        from: 4.5 0 -4.1;
-        to: 4.5 2 -4.1;
-        dur: 4000;
-        dir: alternate;
-        loop: true;
-        "
-        >  
-    
-    </a-asset-item>
-        <a-entity gltf-model= "#shark" position= "4.8 0 -4.1" scale= "3 3 3" rotation= "-15 -50 0"> </a-entity>
+        <a-asset-item id="shark"
+            src="https://cdn.glitch.global/976963d0-31f8-4217-b348-50e0f47514a1/Shark.glb?v=1642550204173">
+
+        </a-asset-item>
+        <a-entity gltf-model="#shark" position="4.8 0 -4.1" scale="3 3 3" rotation="-15 -50 0" animation__1="
+            property: position;
+            from: 4.5 0 -4.1;
+            to: 4.5 2 -4.1;
+            dur: 4000;
+            dir: alternate;
+            loop: true;
+            ">
+        </a-entity>
 
         <!-- Dragon -->
+        <a-assets>
+            <a-asset-item id="dragon"
+                src="https://cdn.glitch.global/92b976a0-e7c4-4779-b879-f5d22314110d/Asian-style%20dragon.glb?v=1642639180542">
+                <a-entity id="spindragon" gltif-model="#dragon" position="0 0 0" scale="5 5 5 " animation__1="
+                property: rotation;
+                from: 0 0 0;
+                to: 00 -360 0;
+                dur: 3000;
+                loop: true;
+                startEvents: dragongrow;
+                " animation__2="
+                property: position;
+                from: 0 0 0;
+                to: 0 2 0;
+                dur: 6000;
+                startEvents: dragongrow;" animation__3="
+                property: scale;
+                from: 6 6 6;
+                to: 70 70 70;
+                dur: 8000;
+                startEvents: dragongrow; "> </a-entity>
+            </a-asset-item>
+        </a-assets>
 
+        <a-sphere position="1 1 -11.1" radius="0.30" color="#0044ff" src="img/orb.jpg"
+        animation__1= "
+        property: rotation;
+        from: 0 0 0;
+        to: 0 -360 0
+        dur: 3000
+        loop: true;
+        dir: normal;"> </a-sphere>
+        <a-assets>
+            <a-asset-item>
+Dragon model id and properties
+</a-asset-item>
+</a-assets>
+<a-sphere>
+    
+    <a-entity>
 
+    </a-entity>
+</a-sphere>
 
 
 
