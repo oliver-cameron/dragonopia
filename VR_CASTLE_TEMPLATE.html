@@ -9,12 +9,12 @@
     <!-- Javascript A-Frame librarys-->
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
-    <script
-        src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <!-- script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component/dist/aframe-proxy-event-component.min.js"></script>
+        <!-- script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script -->
 
 </head>
-
+ 
 <body>
 
     <!-- Javascript coding section -->
@@ -222,47 +222,49 @@
         <!-- Dragon -->
         <a-assets>
             <a-asset-item id="dragon"
-                src="https://cdn.glitch.global/92b976a0-e7c4-4779-b879-f5d22314110d/Asian-style%20dragon.glb?v=1642639180542">
-                <a-entity id="spindragon" gltif-model="#dragon" position="0 0 0" scale="5 5 5 " animation__1="
-                property: rotation;
-                from: 0 0 0;
-                to: 00 -360 0;
-                dur: 3000;
-                loop: true;
-                startEvents: dragongrow;
-                " animation__2="
-                property: position;
-                from: 0 0 0;
-                to: 0 2 0;
-                dur: 6000;
-                startEvents: dragongrow;" animation__3="
-                property: scale;
-                from: 6 6 6;
-                to: 70 70 70;
-                dur: 8000;
-                startEvents: dragongrow; "> </a-entity>
+                src="https://cdn.glitch.global/976963d0-31f8-4217-b348-50e0f47514a1/Shark.glb?v=1642550204173">
+              
             </a-asset-item>
         </a-assets>
 
-        <a-sphere position="1 1 -11.1" radius="0.30" color="#0044ff" src="img/orb.jpg"
+                
+            
+
+        <a-sphere position="1 1 -11.1" radius="0.30" color="#0044ff" src="img/orb.jpg" 
+
+        proxy-event__enter="event: mouseenter; to: CHILDREN; as:
+        dragongrow"
+
         animation__1= "
         property: rotation;
         from: 0 0 0;
         to: 0 -360 0
         dur: 3000
         loop: true;
-        dir: normal;"> </a-sphere>
-        <a-assets>
-            <a-asset-item>
-Dragon model id and properties
-</a-asset-item>
-</a-assets>
-<a-sphere>
+        dir: normal;
+        startEvents: click;"
+        > 
+        <a-entity id="spindragon" gltf-model="#dragon" position="0 0 0" scale="5 5 5 " animation__1="
+        property: rotation;
+        from: 0 0 0;
+        to: 00 -360 0;
+        dur: 3000;
+        loop: true;
+        startEvents: dragongrow;
+        " animation__2="
+        property: position;
+        from: 0 0 0;
+        to: 0 2 0;
+        dur: 6000;
+        startEvents: dragongrow;" animation__3="
+        property: scale;
+        from: 6 6 6;
+        to: 70 70 70;
+        dur: 8000;
+        startEvents: dragongrow; "> </a-entity>
     
-    <a-entity>
-
-    </a-entity>
-</a-sphere>
+    </a-sphere>
+ 
 
 
 
